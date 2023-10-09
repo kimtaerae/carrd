@@ -1,0 +1,156 @@
+/*$periwinkle: rgba(202, 202, 244, 1);
+$ghost-white: rgba(243, 244, 252, 1);
+$pale-purple: rgba(236, 226, 249, 1);
+$periwinkle-2: rgba(193, 194, 242, 1);
+$periwinkle-3: rgba(179, 174, 238, 1);*/
+
+html, body {
+    background-color: rgb(217, 219, 236);
+    background-image: url("https://64.media.tumblr.com/37cddfcac7272b7bd3fb08fb6ff2814e/a83afcd5fa109c43-d8/s400x600/89b26566cd34780506ab415030ab885bc29c6b9a.gif");
+}
+
+#expandableList {
+    display: none;
+    list-style-type: none;
+    font-family: "Lucida Console";
+    text-align: center;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.header img {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#expandLink.expanded + #expandableList {
+    display: inline;
+}
+
+.play {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.5;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.pause {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.5;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.square {
+    position: relative;
+    width: 70%;
+    height: auto;
+    background-color: rgba(178, 176, 242, 0.599);
+    margin: 0 auto;
+    content: "";
+    text-align: center;
+    font-family: "Lucida Console";
+    display: block;
+    margin-bottom: 0;
+}
+
+.periwinkle {
+    color: rgb(137, 137, 221);
+    font-size: 40px;
+    text-align: center;
+    font-family: "Lucida Console";
+}
+
+.ghost-white {
+    color: rgb(217, 219, 236);
+    text-align: center;
+    font-family: "Lucida Console";
+}
+
+.pale-purple {
+    color: rgb(191, 173, 214);
+    text-align: center;
+    font-family: "Lucida Console";
+}
+
+.periwinkle-2 {
+    color: rgb(159, 160, 211);
+    font-size: 20px;
+    text-align: center;
+    font-family: "Lucida Console";
+    position: relative;
+}
+
+.periwinkle-2::before {
+    content: "made with html/css/js 2023";
+    position: absolute;
+    font-size: small;
+    top: -24px; /* Adjust this value to control the tooltip's distance from the paragraph */
+    left: 50%; /* Center the tooltip horizontally */
+    transform: translateX(-50%); /* Center the tooltip horizontally */
+    background-color: rgb(145, 140, 207); /* Background color of the tooltip */
+    color: #fff; /* Text color of the tooltip */
+    padding: 5px 10px; /* Padding around the tooltip text */
+    border-radius: 5px; /* Rounded corners for the tooltip */
+    opacity: 0; /* Initially hide the tooltip */
+    transition: opacity 0.3s; /* Add a smooth transition for the tooltip's visibility */
+}
+
+.periwinkle-2:hover::before {
+    opacity: 0.7;
+}
+
+.periwinkle-3 {
+    color: rgb(145, 140, 207);
+    text-align: center;
+    font-family: "Lucida Console";
+}

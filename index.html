@@ -1,11 +1,73 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="duckrae.png" type="image/x-icon">
+    <title>@taeraeisms</title>
+  </head>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+  <body>
+    <center>
+      <div class="container">
+        <div class="header">
+          <img src="pfp.png">
+          <a href="https://twitter.com/taeraeisms">
+            <h1 class="periwinkle">all about @taeraeisms</h1>
+          </a>
+        </div>
+      </div>
+      <p class="periwinkle-2">welcome to my carrd/personal website!</p>  
+      <audio src="but sometimes.mp3" autoplay id="song"></audio>
+      <script>
+        var audio = document.getElementById("song");
+        audio.volume = 0.1;
+      </script>
+      <div>
+        <button onclick="document.getElementById('song').play()" class="play">▷</button>
+        <button onclick="document.getElementById('song').pause()" class="pause">||</button> 
+      </div>
+      <br>
+    </center>
+  </body>
+  
+  <div class="square">
+    <div id="existingDiv">
+      <p>
+        <br>
+        ╭── ⋅ ⋅ ── ✧ ── ⋅ ⋅ ──╮<br>
+        about me:<br><br>
+        ✧ <b>cath</b> she/her 18+ <b>TAERAE ult</b><br>
+        ✧ sometimes nsfw/risque; I just tweet what's on my mind - mostly taerae brainrot, but I am <b>ot9</b> zerose <b>ot7</b> ennve dni if otherwise!<br>
+        ✧ studio ghibli fan (I'll use the same 3 ghibli gifs)<br>
+        ✧ current likes: <b>zb1</b>, evnne <b>jeonghyeon</b> yunseo, bnd <b>riwoo</b><br>
+        ✧ historic stan list: <b>f(x)</b>, <b>svt</b>, <b>jbj</b>, monsta x, astro, oh my girl, fromis_9
+      </p>
+    </div>
+    <a href="survival-trauma" id="expandLink">✧ <s>recovering</s> survival show addict</a>
+    <p id="expandableList"><br>
+      ✧ produce 101: kim sejeong, park siyeon<br>
+      ✧ produce 101 s2: yeo hwanwoong, takada kenta, lee gwanghyun<br>
+      ✧ produce 48: takahashi juri, park haeyoon, lee chaeyeon, han chowon<br>
+      ✧ produce x 101: keum donghyun, cho seungyoun, han seungwoo<br>
+      ✧ girls planet 999: seo youngeun, ezaki hikaru, an jeongmin<br>
+      ✧ boys planet: <b>KIM TAERAE</b>, anthonny, wakeonez<br>
+      ✧ idol school: tasha<br>
+      ✧ the unit: lee euijin<br>
+      ✧ mixnine: kim suhyun<br>
+      ✧ my teenage girl: kim riwon<br>
+      ✧ a2k: camila
+    </p><br>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      const expandLink = document.getElementById("expandLink");
+      const expandableList = document.getElementById("expandableList");
+  
+      expandLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          expandLink.classList.toggle("expanded"); // Toggle the "expanded" class
+      });
+    });</script>
+  ╰── ⋅ ⋅ ── ✧ ── ⋅ ⋅ ──╯
+  <br>
+  <br>
+  </div>
 </html>
